@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+<link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+ 
+  <title>Frontend Mentor | IP Address Tracker</title>
+
+</head>
+<body>
+  <div class="ip_tracker">
+    <div class="tracker_top">
+        <h1 class="tracker_header">IP Address Tracker</h1>
+        <div class="input__sec">
+            <input type="text" id="ipInput" placeholder="Search for any IP address or domain">
+            <div class="button" id="fetchBtn">
+                <img src="./images/icon-arrow.svg" class="arrow_img" alt="arrow">
+            </div>
+        </div>
+        <div class="tracker__detail">
+            <div class="det__ip detail">
+                <div class="inside">
+                    <p>IP address</p>
+                    <h1 class="ip-add"></h1>
+                </div>
+                <hr>
+            </div>
+            <div class="det__location detail">
+                <div class="inside">
+                    <p>Location</p>
+                    <h1 class="location"></h1>
+                </div>
+                <hr>
+            </div>
+            <div class="det__timezone detail">
+                <div class="inside">
+                    <p>Timezone</p>
+                    <h1 class="timezone"></h1>
+                </div>
+                <hr>
+            </div>
+            <div class="det__isp detail">
+                <div class="inside">
+                    <p>ISP</p>
+                    <h1 class="isp"></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="map_section">
+  <div id="map">
+   
+  </div>
+</div>
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

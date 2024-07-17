@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.ip_tracker{
+    position: relative;
+}
+.tracker_top {
+    background-image: url(./images/pattern-bg-desktop.png);
+    width: 100%;
+    height: 240px;
+    margin: 0 auto;
+    padding: 40px 0;
+    position: relative;
+}
+.tracker_header {
+    color: white;
+    text-align: center;
+}
+.input__sec {
+    margin: 30px auto;
+    width: 40%;
+    display: flex;
+}
+.input__sec .button {
+    cursor: pointer;
+}
+input {
+    width: 94%;
+    height: 36px;
+    padding: 4px 10px;
+    border: none;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+.arrow_img {
+    height: 36px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding: 13px;
+    background-color: black;
+}
+.tracker__detail {
+    width: 60%;
+    background-color: #fff;
+  position: absolute;
+   top: 160px;
+    left: 50%; 
+    transform: translateX(-50%); 
+    border-radius: 10px;
+    padding: 24px 30px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.detail {
+    display: flex;
+    gap: 8px;
+    max-width: 200px;
+}
+.tracker__detail h1 {
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.tracker__detail p {
+    text-transform: uppercase;
+    color: #cecece;
+    text-align: left;
+    flex-direction: column;
+    font-size: 10px;
+}
+.tracker__detail hr {
+    color: #cecece;
+}
+.map_section {
+    width: 100%;
+  
+    /* position: absolute;
+    top: 220px; */
+    /* margin-top: 300px; */
+}
+ #map { 
+ 
+    width: 100%;
+  height: 700px;
+ 
+    border: 0; /* */
+} 
+.laflet-container{
+    position: absolute;
+}
+@media only screen and (max-width: 768px) {
+    .tracker__detail h1 {
+        font-size: 8px;
+    }
+    .tracker__detail p {
+        font-size: 8px;
+    }
+    .tracker__detail {
+        min-width: 300px;
+    }
+    .detail {
+        padding: 0 4px;
+    }
+    .map_section {
+       height: fit-content;
+    }
+}
